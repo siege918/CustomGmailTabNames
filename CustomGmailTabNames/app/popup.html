@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gmail Tab Renamer</title>
+    <LINK href="jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css">
+      
+    <style>
+        .subtitle {
+            font-size: 12px;
+        }
+        #accordion {
+            width: 280px;
+        }
+    </style>
+      <script src="jquery-1.10.2.js"></script>
+      <script src="jquery-ui-1.10.4.custom.js"></script>
+  </head>
+  <body>
+      <div id="accordion">
+          <h3>Add New Email Address</h3>
+          <div>
+            <div class="subtitle">Enter the first few letters or the whole thing.</div>
+            <input type="text" name="addingEmail"/>
+            <button id="add">Add</button><br />
+          </div>
+        <h3>Select Email</h3>
+          <div>
+              <div class="subtitle">Select an email address to change settings for.</div>
+            <select name="email">
+
+                      </select>
+          </div>
+        <h3>Set Tab Names</h3>
+          <div>
+        <div class="subtitle">If left blank, default names are used.</div>
+            
+        Primary: <input type="text" name="primary" /><br />
+        Social: <input type="text" name="social" /><br />
+        Promotions: <input type="text" name="promotions" /><br />
+        Updates: <input type="text" name="updates" /><br />
+        Forums: <input type="text" name="forums" /><br />
+        <button id="saveName"/>Save</button>
+        </div>
+
+          <h3>Set Tab Tooltips</h3>
+          <div>
+        <div class="subtitle">Alters the text that appears when hovering over a tab. Always displays the default tab name in parentheses at the end for your reference. Blank is default.</div>
+            
+        Primary: <input type="text" name="primarytt" /><br />
+        Social: <input type="text" name="socialtt" /><br />
+        Promotions: <input type="text" name="promotionstt" /><br />
+        Updates: <input type="text" name="updatestt" /><br />
+        Forums: <input type="text" name="forumstt" /><br />
+        <button id="saveTT"/>Save</button>
+        </div>
+      </div>
+      <script src="popup.js">
+      </script>
+  </body>
+</html>
+
